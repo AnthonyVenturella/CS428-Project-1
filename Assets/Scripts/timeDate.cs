@@ -14,7 +14,8 @@ public class timeDate : MonoBehaviour
 
     // Update is called once per frame
     void UpdateTime() {
-        timeTextObject.GetComponent<TextMeshPro>().text = System.DateTime.Now.ToString("h:mmtt MM/dd/yyyy");
+        //timeTextObject.GetComponent<TextMeshPro>().text = System.DateTime.Now.ToString("h:mmtt MM/dd/yyyy");
+        timeTextObject.GetComponent<TextMeshPro>().text = System.DateTime.Now.ToString("h:mmtt");
 
     }
 }
