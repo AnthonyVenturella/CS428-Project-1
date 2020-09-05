@@ -6,6 +6,7 @@ using TMPro;
 public class timeDate : MonoBehaviour
 {
     public GameObject timeTextObject;
+    public GameObject dateTextObject;
 
     // Start is called before the first frame update
     void Start() {
@@ -16,6 +17,6 @@ public class timeDate : MonoBehaviour
     void UpdateTime() {
         //timeTextObject.GetComponent<TextMeshPro>().text = System.DateTime.Now.ToString("h:mmtt MM/dd/yyyy");
         timeTextObject.GetComponent<TextMeshPro>().text = System.DateTime.Now.ToString("h:mmtt");
-
+        dateTextObject.GetComponent<TextMeshPro>().text = System.DateTime.Now.ToString("MM/dd/yy");
     }
 }

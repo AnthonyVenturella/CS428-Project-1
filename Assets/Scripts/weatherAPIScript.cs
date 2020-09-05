@@ -195,10 +195,11 @@ public class weatherAPIScript : MonoBehaviour{
 
 				}
 
-				temperatureTextObject.GetComponent<TextMeshPro>().text = _temperature + " \u00B0F " + _humidity + "% Humidity";
-				//conditionsTextObject.GetComponent<TextMeshPro>().text = _description;
-				//windSpeedTextObject.GetComponent<TextMeshPro>().text = _windSpeed + "mph " + _cardinalDir;
-
+				temperatureTextObject.GetComponent<TextMeshPro>().text = _temperature + " \u00B0F";
+				humidityTextObject.GetComponent<TextMeshPro>().text = _humidity + "% Humidity";
+				conditionsTextObject.GetComponent<TextMeshPro>().text = _description;
+				windSpeedTextObject.GetComponent<TextMeshPro>().text = _windSpeed + "mph";
+				windDirTextObject.GetComponent<TextMeshPro>().text = _cardinalDir;
 			}
 
 		}
