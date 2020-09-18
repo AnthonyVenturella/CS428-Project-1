@@ -60,6 +60,7 @@ public class weatherAPIScript : MonoBehaviour{
 
 	public GameObject[] temperatureDiscs;
 	public GameObject[] humidityDisks;
+	public GameObject[] conditionStates;
 
 	private int _tempDiscCount;
 	private int _humidityDiskCount;
@@ -146,6 +147,8 @@ public class weatherAPIScript : MonoBehaviour{
 				windSock.transform.localScale = new Vector3(1.0f, _mappedSpeed, 1.0f);
 				windSockParent.transform.Rotate(1.0f, _windDir, 1.0f, Space.Self);
 
+				setIconState(_description);
+
 				temperatureTextObject.GetComponent<TextMeshPro>().text = _temperature + " \u00B0F";
 				humidityTextObject.GetComponent<TextMeshPro>().text = _humidity + "% Humidity";
 				conditionsTextObject.GetComponent<TextMeshPro>().text = _description;
@@ -192,6 +195,12 @@ public class weatherAPIScript : MonoBehaviour{
 		for (int i = 0; i < 10; i++) {
 			temperatureDiscs[i].gameObject.SetActive(false);
 			humidityDisks[i].gameObject.SetActive(false);
+		}
+	}
+
+	private void unAssignConditions() {
+		for (int i = 0; i < 9; i++) {
+			conditionStates[i].gameObject.SetActive(false);
 		}
 	}
 
@@ -264,6 +273,108 @@ public class weatherAPIScript : MonoBehaviour{
 	private float mapWindSpeedRange(float _speed) {
 
 		return _speed * 1.0f / 50;
+	}
+
+	//redo this with hashtable when I have time (dont judge me! Call it a hack n slash prototype or something)
+	private void setIconState(string description) {
+
+		unAssignConditions();
+
+		//Group "clear sky"
+		if (description == "\"clear sky\"") {
+			conditionStates[0].gameObject.SetActive(true);
+		}
+
+		//group "few clouds"
+		else if(description == "\"few clouds\"") {
+			conditionStates[1].gameObject.SetActive(true);
+		}
+
+		//group "scattered clouds"
+		else if (description == "\"scattered clouds\"") {
+			conditionStates[2].gameObject.SetActive(true);
+		}
+
+		//group "broken clouds"
+		else if (description == "\"broken clouds\"" ||
+				 description == "\"overcast clouds\"") {
+			conditionStates[3].gameObject.SetActive(true);
+		}
+
+		//group "shower rain"
+		else if (description == "\"light intensity shower rain\"" ||
+				 description == "\"shower rain\"" ||
+				 description == "\"heavy intensity shower rain\"" ||
+				 description == "\"ragged shower rain\"" ||
+				 description == "\"light intensity drizzle\"" ||
+				 description == "\"drizzle\"" ||
+				 description == "\"heavy intensity drizzle\"" ||
+				 description == "\"light intensity drizzle rain\"" ||
+				 description == "\"drizzle rain\"" ||
+				 description == "\"heavy intensity drizzle rain\"" ||
+				 description == "\"shower rain and drizzle\"" ||
+				 description == "\"heavy shower rain and drizzle\"" ||
+				 description == "\"shower drizzle\"") {
+			conditionStates[4].gameObject.SetActive(true);
+		}
+
+		//group "rain"
+		else if (description == "\"light rain\"" ||
+				 description == "\"moderate rain\"" ||
+				 description == "\"heavy intensity rain\"" ||
+				 description == "\"very heavy rain\"" ||
+				 description == "\"extreme rain\"" ||
+				 description == "\"rain\"") {
+			conditionStates[5].gameObject.SetActive(true);
+		}
+
+		//group "thunderstorm"
+		else if (description == "\"thunderstorm with light rain\"" ||
+				 description == "\"thunderstorm with rain\"" ||
+				 description == "\"thunderstorm with heavy rain\"" ||
+				 description == "\"light thunderstorm\"" ||
+				 description == "\"thunderstorm\"" ||
+				 description == "\"heavy thunderstorm\"" ||
+				 description == "\"ragged thunderstorm\"" ||
+				 description == "\"thunderstorm with light drizzle\"" ||
+				 description == "\"thunderstorm with drizzle\"" ||
+				 description == "\"thunderstorm with heavy drizzle\"") {
+			conditionStates[6].gameObject.SetActive(true);
+		}
+
+		//group "snow"
+		else if (description == "\"light snow\"" ||
+				 description == "\"Snow\"" ||
+				 description == "\"Heavy snow\"" ||
+				 description == "\"Sleet\"" ||
+				 description == "\"Light shower sleet\"" ||
+				 description == "\"Shower sleet\"" ||
+				 description == "\"Light rain and snow\"" ||
+				 description == "\"Rain and snow\"" ||
+				 description == "\"Light shower snow\"" ||
+				 description == "\"Shower snow\"" ||
+				 description == "\"Heavy shower snow\"" ||
+				 description == "\"freezing rain\"") {
+			conditionStates[7].gameObject.SetActive(true);
+		}
+
+		//group "mist"
+		else if (description == "\"mist\"" ||
+				 description == "\"Smoke\"" ||
+				 description == "\"Haze\"" ||
+				 description == "\"sand/ dust whirls\"" ||
+				 description == "\"fog\"" ||
+				 description == "\"sand\"" ||
+				 description == "\"dust\"" ||
+				 description == "\"volcanic ash\"" ||
+				 description == "\"squalls\"" ||
+				 description == "\"tornado\"") {
+			conditionStates[8].gameObject.SetActive(true);
+		}
+
+		else {
+			conditionStates[0].gameObject.SetActive(true);
+		}
 	}
 
 }
