@@ -5,7 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class soundParticle : MonoBehaviour {
     public AudioClip spawnSound;
-    
+    public AudioSource m_MyAudioSource;
+
     private ParticleSystem _particleSystem;
     private int _currentCount = 0;
 
@@ -17,7 +18,8 @@ public class soundParticle : MonoBehaviour {
     void Update() {
 
         if(_particleSystem.particleCount > _currentCount) {
-            AudioSource.PlayClipAtPoint(spawnSound, new Vector3(5, 1, 2));
+            //AudioSource.PlayClipAtPoint(spawnSound, new Vector3(0, 0, 0), 0.5f);
+            m_MyAudioSource.Play();
         }
 
         _currentCount = _particleSystem.particleCount;

@@ -74,6 +74,8 @@ public class weatherAPIScript : MonoBehaviour{
 	private string _description;
 	private string _cardinalDir;
 
+	private int debugCond = 8;
+
 	string url = "http://api.openweathermap.org/data/2.5/weather?lat=41.88&lon=-87.6&APPID=84d195e355ae1f1edaa2ae3273a6937e&units=imperial";
 
     
@@ -89,6 +91,32 @@ public class weatherAPIScript : MonoBehaviour{
 		//Spawning on a co routine so it don't bog down the runtime
         StartCoroutine(GetRequest(url));
     }
+
+    private void Update() {
+		if (Input.GetKeyDown(KeyCode.RightArrow)) {
+			debugCond++;
+			if (debugCond > 8) {
+				debugCond = 0;
+			}
+
+			unAssignConditions();
+			print("right arrow key was pressed, at scene " + debugCond);
+
+			conditionStates[debugCond].gameObject.SetActive(true);
+		}
+
+		if (Input.GetKeyDown(KeyCode.LeftArrow)) {
+			debugCond--;
+			if (debugCond < 0) {
+				debugCond = 8;
+            }
+
+			unAssignConditions();
+			print("left arrow key was pressed, at scene " + debugCond);
+
+			conditionStates[debugCond].gameObject.SetActive(true);
+		}
+	}
 
     IEnumerator GetRequest(string uri) {
         using (UnityWebRequest webRequest = UnityWebRequest.Get(uri)) {
@@ -344,24 +372,24 @@ public class weatherAPIScript : MonoBehaviour{
 
 		//group "snow"
 		else if (description == "\"light snow\"" ||
-				 description == "\"Snow\"" ||
-				 description == "\"Heavy snow\"" ||
-				 description == "\"Sleet\"" ||
-				 description == "\"Light shower sleet\"" ||
-				 description == "\"Shower sleet\"" ||
-				 description == "\"Light rain and snow\"" ||
-				 description == "\"Rain and snow\"" ||
-				 description == "\"Light shower snow\"" ||
-				 description == "\"Shower snow\"" ||
-				 description == "\"Heavy shower snow\"" ||
+				 description == "\"snow\"" ||
+				 description == "\"heavy snow\"" ||
+				 description == "\"sleet\"" ||
+				 description == "\"light shower sleet\"" ||
+				 description == "\"shower sleet\"" ||
+				 description == "\"light rain and snow\"" ||
+				 description == "\"rain and snow\"" ||
+				 description == "\"light shower snow\"" ||
+				 description == "\"shower snow\"" ||
+				 description == "\"heavy shower snow\"" ||
 				 description == "\"freezing rain\"") {
 			conditionStates[7].gameObject.SetActive(true);
 		}
 
 		//group "mist"
 		else if (description == "\"mist\"" ||
-				 description == "\"Smoke\"" ||
-				 description == "\"Haze\"" ||
+				 description == "\"smoke\"" ||
+				 description == "\"haze\"" ||
 				 description == "\"sand/ dust whirls\"" ||
 				 description == "\"fog\"" ||
 				 description == "\"sand\"" ||
