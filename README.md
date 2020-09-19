@@ -11,3 +11,6 @@ sounds used:
 - http://soundbible.com/540-Tree-Frogs-And-Birds.html
 - http://soundbible.com/1247-Wind.html
 - http://soundbible.com/280-Woodpecker-Tapping-Tree.html
+
+lightning effect based on:
+https://www.youtube.com/watch?v=ikkr5jVJfFY
