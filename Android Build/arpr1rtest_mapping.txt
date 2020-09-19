@@ -1,0 +1,1187 @@
+# compiler: R8
+# compiler_version: 1.4.77
+# min_api: 19
+a.a.a -> a.a.a:
+    1:1:void <init>() -> <init>
+a.a.b -> a.a.b:
+    1:1:void <init>() -> <init>
+com.google.a.a.a -> b.a.a.a.a:
+    15:15:void <clinit>() -> <clinit>
+    1:3:void <init>(java.lang.String) -> <init>
+    14:14:boolean a(int,android.os.Parcel) -> a
+    4:4:android.os.IBinder asBinder() -> asBinder
+    5:13:boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.google.a.a.b -> b.a.a.a.b:
+    1:4:void <init>(android.os.IBinder,java.lang.String) -> <init>
+    6:8:android.os.Parcel a() -> a
+    9:17:android.os.Parcel a(int,android.os.Parcel) -> a
+    5:5:android.os.IBinder asBinder() -> asBinder
+    19:22:void b(int,android.os.Parcel) -> b
+com.google.a.a.c -> b.a.a.a.c:
+com.google.a.a.d -> b.a.a.a.d:
+    14:14:void <clinit>() -> <clinit>
+    1:1:void <init>() -> <init>
+    2:4:android.os.Parcelable a(android.os.Parcel,android.os.Parcelable$Creator) -> a
+    5:9:void a(android.os.Parcel,android.os.Parcelable) -> a
+    10:13:void a(android.os.Parcel,android.os.IInterface) -> a
+com.google.a.b.a.a.a.a -> b.a.a.b.a.a.a.a:
+    1:6:com.google.a.b.a.a.a.b a(android.os.IBinder) -> a
+com.google.a.b.a.a.a.b -> b.a.a.b.a.a.a.b:
+com.google.a.b.a.a.a.c -> b.a.a.b.a.a.a.c:
+com.google.a.b.a.a.a.d -> b.a.a.b.a.a.a.d:
+    1:2:void <init>(android.os.IBinder) -> <init>
+    3:9:void a(java.lang.String,java.util.List,android.os.Bundle,com.google.a.b.a.a.a.c) -> a
+    10:15:void a(java.lang.String,android.os.Bundle,com.google.a.b.a.a.a.c) -> a
+com.google.a.b.a.a.a.e -> b.a.a.b.a.a.a.e:
+    1:2:void <init>() -> <init>
+    3:14:boolean a(int,android.os.Parcel) -> a
+com.google.androidgamesdk.ChoreographerCallback$1 -> com.google.androidgamesdk.a:
+com.google.androidgamesdk.SwappyDisplayManager$1 -> com.google.androidgamesdk.b:
+com.google.androidgamesdk.SwappyDisplayManager$a -> com.google.androidgamesdk.SwappyDisplayManager$a:
+    com.google.androidgamesdk.SwappyDisplayManager b -> d
+    java.util.concurrent.locks.Condition d -> c
+    java.util.concurrent.locks.Lock c -> b
+com.google.ar.core.Anchor -> com.google.ar.core.Anchor:
+    1:4:void <init>(long,com.google.ar.core.Session) -> <init>
+    5:8:void <init>() -> <init>
+    26:27:void detach() -> detach
+    9:12:boolean equals(java.lang.Object) -> equals
+    14:17:void finalize() -> finalize
+    22:22:java.lang.String getCloudAnchorId() -> getCloudAnchorId
+    23:25:com.google.ar.core.Anchor$CloudAnchorState getCloudAnchorState() -> getCloudAnchorState
+    18:18:com.google.ar.core.Pose getPose() -> getPose
+    19:21:com.google.ar.core.TrackingState getTrackingState() -> getTrackingState
+    13:13:int hashCode() -> hashCode
+com.google.ar.core.Anchor$CloudAnchorState -> com.google.ar.core.Anchor$CloudAnchorState:
+    12:24:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    7:11:com.google.ar.core.Anchor$CloudAnchorState forNumber(int) -> forNumber
+    6:6:boolean isError() -> isError
+    2:2:com.google.ar.core.Anchor$CloudAnchorState valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.Anchor$CloudAnchorState[] values() -> values
+com.google.ar.core.ArCoreApk -> com.google.ar.core.ArCoreApk:
+    2:2:void <init>() -> <init>
+    3:3:com.google.ar.core.ArCoreApk$Availability checkAvailability(android.content.Context) -> checkAvailability
+    1:1:com.google.ar.core.ArCoreApk getInstance() -> getInstance
+    4:4:com.google.ar.core.ArCoreApk$InstallStatus requestInstall(android.app.Activity,boolean) -> requestInstall
+    5:5:com.google.ar.core.ArCoreApk$InstallStatus requestInstall(android.app.Activity,boolean,com.google.ar.core.ArCoreApk$InstallBehavior,com.google.ar.core.ArCoreApk$UserMessageType) -> requestInstall
+com.google.ar.core.ArCoreApk$Availability -> com.google.ar.core.ArCoreApk$Availability:
+    16:23:void <clinit>() -> <clinit>
+    7:9:void <init>(java.lang.String,int,int) -> <init>
+    15:15:void <init>(java.lang.String,int,int,com.google.ar.core.aj) -> <init>
+    10:14:com.google.ar.core.ArCoreApk$Availability forNumber(int) -> forNumber
+    5:5:boolean isSupported() -> isSupported
+    6:6:boolean isTransient() -> isTransient
+    3:3:boolean isUnknown() -> isUnknown
+    4:4:boolean isUnsupported() -> isUnsupported
+    2:2:com.google.ar.core.ArCoreApk$Availability valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.ArCoreApk$Availability[] values() -> values
+com.google.ar.core.ArCoreApk$InstallBehavior -> com.google.ar.core.ArCoreApk$InstallBehavior:
+    11:13:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    6:10:com.google.ar.core.ArCoreApk$InstallBehavior forNumber(int) -> forNumber
+    2:2:com.google.ar.core.ArCoreApk$InstallBehavior valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.ArCoreApk$InstallBehavior[] values() -> values
+com.google.ar.core.ArCoreApk$InstallStatus -> com.google.ar.core.ArCoreApk$InstallStatus:
+    11:13:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    6:10:com.google.ar.core.ArCoreApk$InstallStatus forNumber(int) -> forNumber
+    2:2:com.google.ar.core.ArCoreApk$InstallStatus valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.ArCoreApk$InstallStatus[] values() -> values
+com.google.ar.core.ArCoreApk$UserMessageType -> com.google.ar.core.ArCoreApk$UserMessageType:
+    11:14:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    6:10:com.google.ar.core.ArCoreApk$UserMessageType forNumber(int) -> forNumber
+    2:2:com.google.ar.core.ArCoreApk$UserMessageType valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.ArCoreApk$UserMessageType[] values() -> values
+com.google.ar.core.ArCoreApkJniAdapter -> com.google.ar.core.ArCoreApkJniAdapter:
+    25:47:void <clinit>() -> <clinit>
+    1:1:void <init>() -> <init>
+    20:24:int a(java.lang.Throwable) -> a
+    2:5:int checkAvailability(android.content.Context) -> checkAvailability
+    6:11:int requestInstall(android.app.Activity,boolean,int[]) -> requestInstall
+    12:19:int requestInstallCustom(android.app.Activity,boolean,int,int,int[]) -> requestInstallCustom
+com.google.ar.core.ArImage -> com.google.ar.core.ArImage:
+    1:4:void <init>(com.google.ar.core.Session,long) -> <init>
+    35:35:int access$000(com.google.ar.core.ArImage,long,long,int) -> access$000
+    36:36:int access$100(com.google.ar.core.ArImage,long,long,int) -> access$100
+    37:37:java.nio.ByteBuffer access$200(com.google.ar.core.ArImage,long,long,int) -> access$200
+    5:7:void close() -> close
+    32:32:android.graphics.Rect getCropRect() -> getCropRect
+    8:10:int getFormat() -> getFormat
+    20:22:int getHeight() -> getHeight
+    24:26:android.media.Image$Plane[] getPlanes() -> getPlanes
+    12:14:long getTimestamp() -> getTimestamp
+    16:18:int getWidth() -> getWidth
+    33:33:void setCropRect(android.graphics.Rect) -> setCropRect
+    34:34:void setTimestamp(long) -> setTimestamp
+com.google.ar.core.ArImage$a -> com.google.ar.core.ArImage$a:
+    1:4:void <init>(com.google.ar.core.ArImage,long,int) -> <init>
+    13:15:java.nio.ByteBuffer getBuffer() -> getBuffer
+    9:11:int getPixelStride() -> getPixelStride
+    5:7:int getRowStride() -> getRowStride
+com.google.ar.core.AugmentedFace -> com.google.ar.core.AugmentedFace:
+    1:3:void <init>(long,com.google.ar.core.Session) -> <init>
+    4:5:void <init>() -> <init>
+    30:30:com.google.ar.core.Anchor createAnchor(com.google.ar.core.Pose) -> createAnchor
+    33:33:boolean equals(java.lang.Object) -> equals
+    29:29:java.util.Collection getAnchors() -> getAnchors
+    28:28:com.google.ar.core.Pose getCenterPose() -> getCenterPose
+    24:24:java.nio.FloatBuffer getMeshNormals() -> getMeshNormals
+    25:25:java.nio.FloatBuffer getMeshTextureCoordinates() -> getMeshTextureCoordinates
+    26:26:java.nio.ShortBuffer getMeshTriangleIndices() -> getMeshTriangleIndices
+    23:23:java.nio.FloatBuffer getMeshVertices() -> getMeshVertices
+    27:27:com.google.ar.core.Pose getRegionPose(com.google.ar.core.AugmentedFace$RegionType) -> getRegionPose
+    31:31:com.google.ar.core.TrackingState getTrackingState() -> getTrackingState
+    32:32:int hashCode() -> hashCode
+    6:22:void populateMeshData() -> populateMeshData
+com.google.ar.core.AugmentedFace$RegionType -> com.google.ar.core.AugmentedFace$RegionType:
+    6:9:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    2:2:com.google.ar.core.AugmentedFace$RegionType valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.AugmentedFace$RegionType[] values() -> values
+com.google.ar.core.AugmentedImage -> com.google.ar.core.AugmentedImage:
+    1:2:void <init>(long,com.google.ar.core.Session) -> <init>
+    12:12:com.google.ar.core.Anchor createAnchor(com.google.ar.core.Pose) -> createAnchor
+    15:15:boolean equals(java.lang.Object) -> equals
+    11:11:java.util.Collection getAnchors() -> getAnchors
+    3:3:com.google.ar.core.Pose getCenterPose() -> getCenterPose
+    4:4:float getExtentX() -> getExtentX
+    5:5:float getExtentZ() -> getExtentZ
+    6:6:int getIndex() -> getIndex
+    7:7:java.lang.String getName() -> getName
+    8:10:com.google.ar.core.AugmentedImage$TrackingMethod getTrackingMethod() -> getTrackingMethod
+    13:13:com.google.ar.core.TrackingState getTrackingState() -> getTrackingState
+    14:14:int hashCode() -> hashCode
+com.google.ar.core.AugmentedImage$TrackingMethod -> com.google.ar.core.AugmentedImage$TrackingMethod:
+    11:14:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    6:10:com.google.ar.core.AugmentedImage$TrackingMethod forNumber(int) -> forNumber
+    2:2:com.google.ar.core.AugmentedImage$TrackingMethod valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.AugmentedImage$TrackingMethod[] values() -> values
+com.google.ar.core.AugmentedImageDatabase -> com.google.ar.core.AugmentedImageDatabase:
+    4:5:void <init>(com.google.ar.core.Session) -> <init>
+    6:9:void <init>(com.google.ar.core.Session,long) -> <init>
+    10:15:int addImage(java.lang.String,android.graphics.Bitmap) -> addImage
+    16:21:int addImage(java.lang.String,android.graphics.Bitmap,float) -> addImage
+    31:49:java.nio.ByteBuffer convertBitmapToGrayscaleDirectBuffer(android.graphics.Bitmap) -> convertBitmapToGrayscaleDirectBuffer
+    1:3:com.google.ar.core.AugmentedImageDatabase deserialize(com.google.ar.core.Session,java.io.InputStream) -> deserialize
+    27:30:void finalize() -> finalize
+    22:22:int getNumImages() -> getNumImages
+    50:57:java.nio.ByteBuffer loadDirectByteBuffer(java.io.InputStream) -> loadDirectByteBuffer
+    23:26:void serialize(java.io.OutputStream) -> serialize
+com.google.ar.core.Camera -> com.google.ar.core.Camera:
+    1:4:void <init>(com.google.ar.core.Session,com.google.ar.core.Frame) -> <init>
+    5:8:void <init>() -> <init>
+    9:12:boolean equals(java.lang.Object) -> equals
+    14:17:void finalize() -> finalize
+    25:25:com.google.ar.core.Pose getDisplayOrientedPose() -> getDisplayOrientedPose
+    30:33:com.google.ar.core.CameraIntrinsics getImageIntrinsics() -> getImageIntrinsics
+    24:24:com.google.ar.core.Pose getPose() -> getPose
+    28:29:void getProjectionMatrix(float[],int,float,float) -> getProjectionMatrix
+    34:37:com.google.ar.core.CameraIntrinsics getTextureIntrinsics() -> getTextureIntrinsics
+    21:23:com.google.ar.core.TrackingFailureReason getTrackingFailureReason() -> getTrackingFailureReason
+    18:20:com.google.ar.core.TrackingState getTrackingState() -> getTrackingState
+    26:27:void getViewMatrix(float[],int) -> getViewMatrix
+    13:13:int hashCode() -> hashCode
+com.google.ar.core.CameraConfig -> com.google.ar.core.CameraConfig:
+    1:4:void <init>(com.google.ar.core.Session,long) -> <init>
+    5:8:void <init>() -> <init>
+    9:13:void finalize() -> finalize
+    20:20:java.lang.String getCameraId() -> getCameraId
+    21:23:com.google.ar.core.CameraConfig$FacingDirection getFacingDirection() -> getFacingDirection
+    14:16:android.util.Size getImageSize() -> getImageSize
+    17:19:android.util.Size getTextureSize() -> getTextureSize
+com.google.ar.core.CameraConfig$FacingDirection -> com.google.ar.core.CameraConfig$FacingDirection:
+    11:13:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    6:10:com.google.ar.core.CameraConfig$FacingDirection forNumber(int) -> forNumber
+    2:2:com.google.ar.core.CameraConfig$FacingDirection valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.CameraConfig$FacingDirection[] values() -> values
+com.google.ar.core.CameraIntrinsics -> com.google.ar.core.CameraIntrinsics:
+    1:5:void <init>(long,com.google.ar.core.Session) -> <init>
+    6:10:void <init>() -> <init>
+    11:14:void finalize() -> finalize
+    15:16:void getFocalLength(float[],int) -> getFocalLength
+    17:19:float[] getFocalLength() -> getFocalLength
+    25:26:void getImageDimensions(int[],int) -> getImageDimensions
+    27:29:int[] getImageDimensions() -> getImageDimensions
+    20:21:void getPrincipalPoint(float[],int) -> getPrincipalPoint
+    22:24:float[] getPrincipalPoint() -> getPrincipalPoint
+com.google.ar.core.Config -> com.google.ar.core.Config:
+    1:4:void <init>(com.google.ar.core.Session) -> <init>
+    5:8:void <init>(com.google.ar.core.Session,long) -> <init>
+    9:12:void <init>() -> <init>
+    46:49:void finalize() -> finalize
+    38:40:com.google.ar.core.Config$AugmentedFaceMode getAugmentedFaceMode() -> getAugmentedFaceMode
+    35:37:com.google.ar.core.AugmentedImageDatabase getAugmentedImageDatabase() -> getAugmentedImageDatabase
+    28:30:com.google.ar.core.Config$CloudAnchorMode getCloudAnchorMode() -> getCloudAnchorMode
+    43:43:com.google.ar.core.Config$FocusMode getFocusMode() -> getFocusMode
+    13:15:com.google.ar.core.Config$LightEstimationMode getLightEstimationMode() -> getLightEstimationMode
+    18:20:com.google.ar.core.Config$PlaneFindingMode getPlaneFindingMode() -> getPlaneFindingMode
+    23:23:com.google.ar.core.Config$UpdateMode getUpdateMode() -> getUpdateMode
+    41:42:com.google.ar.core.Config setAugmentedFaceMode(com.google.ar.core.Config$AugmentedFaceMode) -> setAugmentedFaceMode
+    31:34:com.google.ar.core.Config setAugmentedImageDatabase(com.google.ar.core.AugmentedImageDatabase) -> setAugmentedImageDatabase
+    26:27:com.google.ar.core.Config setCloudAnchorMode(com.google.ar.core.Config$CloudAnchorMode) -> setCloudAnchorMode
+    44:45:com.google.ar.core.Config setFocusMode(com.google.ar.core.Config$FocusMode) -> setFocusMode
+    16:17:com.google.ar.core.Config setLightEstimationMode(com.google.ar.core.Config$LightEstimationMode) -> setLightEstimationMode
+    21:22:com.google.ar.core.Config setPlaneFindingMode(com.google.ar.core.Config$PlaneFindingMode) -> setPlaneFindingMode
+    24:25:com.google.ar.core.Config setUpdateMode(com.google.ar.core.Config$UpdateMode) -> setUpdateMode
+com.google.ar.core.Config$AugmentedFaceMode -> com.google.ar.core.Config$AugmentedFaceMode:
+    11:13:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    6:10:com.google.ar.core.Config$AugmentedFaceMode forNumber(int) -> forNumber
+    2:2:com.google.ar.core.Config$AugmentedFaceMode valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.Config$AugmentedFaceMode[] values() -> values
+com.google.ar.core.Config$CloudAnchorMode -> com.google.ar.core.Config$CloudAnchorMode:
+    11:13:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    6:10:com.google.ar.core.Config$CloudAnchorMode forNumber(int) -> forNumber
+    2:2:com.google.ar.core.Config$CloudAnchorMode valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.Config$CloudAnchorMode[] values() -> values
+com.google.ar.core.Config$FocusMode -> com.google.ar.core.Config$FocusMode:
+    11:13:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    6:10:com.google.ar.core.Config$FocusMode forNumber(int) -> forNumber
+    2:2:com.google.ar.core.Config$FocusMode valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.Config$FocusMode[] values() -> values
+com.google.ar.core.Config$LightEstimationMode -> com.google.ar.core.Config$LightEstimationMode:
+    11:14:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    6:10:com.google.ar.core.Config$LightEstimationMode forNumber(int) -> forNumber
+    2:2:com.google.ar.core.Config$LightEstimationMode valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.Config$LightEstimationMode[] values() -> values
+com.google.ar.core.Config$PlaneFindingMode -> com.google.ar.core.Config$PlaneFindingMode:
+    11:15:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    6:10:com.google.ar.core.Config$PlaneFindingMode forNumber(int) -> forNumber
+    2:2:com.google.ar.core.Config$PlaneFindingMode valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.Config$PlaneFindingMode[] values() -> values
+com.google.ar.core.Config$UpdateMode -> com.google.ar.core.Config$UpdateMode:
+    11:13:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    6:10:com.google.ar.core.Config$UpdateMode forNumber(int) -> forNumber
+    2:2:com.google.ar.core.Config$UpdateMode valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.Config$UpdateMode[] values() -> values
+com.google.ar.core.Coordinates2d -> com.google.ar.core.Coordinates2d:
+    11:18:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    6:10:com.google.ar.core.Coordinates2d forNumber(int) -> forNumber
+    2:2:com.google.ar.core.Coordinates2d valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.Coordinates2d[] values() -> values
+com.google.ar.core.Frame -> com.google.ar.core.Frame:
+    68:69:void <clinit>() -> <clinit>
+    1:2:void <init>(com.google.ar.core.Session) -> <init>
+    3:8:void <init>(com.google.ar.core.Session,long) -> <init>
+    9:14:void <init>() -> <init>
+    62:63:android.media.Image acquireCameraImage() -> acquireCameraImage
+    37:39:com.google.ar.core.PointCloud acquirePointCloud() -> acquirePointCloud
+    46:52:java.util.List convertNativeHitResultsToList(long[]) -> convertNativeHitResultsToList
+    15:19:void finalize() -> finalize
+    27:27:long getAndroidCameraTimestamp() -> getAndroidCameraTimestamp
+    28:28:com.google.ar.core.Pose getAndroidSensorPose() -> getAndroidSensorPose
+    20:20:com.google.ar.core.Camera getCamera() -> getCamera
+    31:32:com.google.ar.core.ImageMetadata getImageMetadata() -> getImageMetadata
+    29:30:com.google.ar.core.LightEstimate getLightEstimate() -> getLightEstimate
+    26:26:long getTimestamp() -> getTimestamp
+    53:55:java.util.Collection getUpdatedAnchors() -> getUpdatedAnchors
+    56:61:java.util.Collection getUpdatedTrackables(java.lang.Class) -> getUpdatedTrackables
+    21:21:boolean hasDisplayGeometryChanged() -> hasDisplayGeometryChanged
+    40:41:java.util.List hitTest(float,float) -> hitTest
+    42:42:java.util.List hitTest(android.view.MotionEvent) -> hitTest
+    43:45:java.util.List hitTest(float[],int,float[],int) -> hitTest
+    36:36:boolean isSharedCameraUsed() -> isSharedCameraUsed
+    64:65:void transformCoordinates2d(com.google.ar.core.Coordinates2d,java.nio.FloatBuffer,com.google.ar.core.Coordinates2d,java.nio.FloatBuffer) -> transformCoordinates2d
+    66:67:void transformCoordinates2d(com.google.ar.core.Coordinates2d,float[],com.google.ar.core.Coordinates2d,float[]) -> transformCoordinates2d
+    22:23:void transformDisplayUvCoords(java.nio.FloatBuffer,java.nio.FloatBuffer) -> transformDisplayUvCoords
+com.google.ar.core.HitResult -> com.google.ar.core.HitResult:
+    1:4:void <init>(long,com.google.ar.core.Session) -> <init>
+    5:8:void <init>() -> <init>
+    22:23:com.google.ar.core.Anchor createAnchor() -> createAnchor
+    9:12:boolean equals(java.lang.Object) -> equals
+    14:17:void finalize() -> finalize
+    19:19:float getDistance() -> getDistance
+    18:18:com.google.ar.core.Pose getHitPose() -> getHitPose
+    20:21:com.google.ar.core.Trackable getTrackable() -> getTrackable
+    13:13:int hashCode() -> hashCode
+com.google.ar.core.ImageFormat -> com.google.ar.core.ImageFormat:
+    1:1:void <init>() -> <init>
+com.google.ar.core.ImageMetadata -> com.google.ar.core.ImageMetadata:
+    1:5:void <init>(long,com.google.ar.core.Session) -> <init>
+    6:10:void <init>() -> <init>
+    11:14:void finalize() -> finalize
+    19:22:byte getByte(int) -> getByte
+    68:71:byte[] getByteArray(int) -> getByteArray
+    52:55:double getDouble(int) -> getDouble
+    100:103:double[] getDoubleArray(int) -> getDoubleArray
+    35:38:float getFloat(int) -> getFloat
+    84:87:float[] getFloatArray(int) -> getFloatArray
+    27:30:int getInt(int) -> getInt
+    76:79:int[] getIntArray(int) -> getIntArray
+    15:17:long[] getKeys() -> getKeys
+    43:47:long getLong(int) -> getLong
+    92:95:long[] getLongArray(int) -> getLongArray
+    116:118:void getMetdataEntry(int,com.google.ar.core.ImageMetadata$a) -> getMetdataEntry
+    60:63:android.util.Rational getRational(int) -> getRational
+    108:111:android.util.Rational[] getRationalArray(int) -> getRationalArray
+com.google.ar.core.ImageMetadata$a -> com.google.ar.core.ImageMetadata$a:
+    1:4:void <init>() -> <init>
+com.google.ar.core.InstallActivity -> com.google.ar.core.InstallActivity:
+    1:3:void <init>() -> <init>
+    123:123:void access$000(com.google.ar.core.InstallActivity,java.lang.Exception) -> access$000
+    124:124:void access$100(com.google.ar.core.InstallActivity) -> access$100
+    125:125:void access$200(com.google.ar.core.InstallActivity) -> access$200
+    126:126:void access$300(com.google.ar.core.InstallActivity) -> access$300
+    127:127:com.google.ar.core.q access$402(com.google.ar.core.InstallActivity,com.google.ar.core.q) -> access$402
+    128:128:boolean access$500(com.google.ar.core.InstallActivity) -> access$500
+    129:129:void access$600(com.google.ar.core.InstallActivity) -> access$600
+    72:84:void animateToSpinner() -> animateToSpinner
+    118:119:void closeInstaller() -> closeInstaller
+    100:101:void finish() -> finish
+    102:106:void finishWithFailure(java.lang.Exception) -> finishWithFailure
+    111:111:boolean isOptional() -> isOptional
+    120:122:void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    4:33:void onCreate(android.os.Bundle) -> onCreate
+    107:110:void onDestroy() -> onDestroy
+    85:85:void onNewIntent(android.content.Intent) -> onNewIntent
+    86:99:void onResume() -> onResume
+    34:36:void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    37:47:void showEducationDialog() -> showEducationDialog
+    50:71:void showSpinner() -> showSpinner
+    112:117:void startInstaller() -> startInstaller
+com.google.ar.core.LightEstimate -> com.google.ar.core.LightEstimate:
+    1:5:void <init>(com.google.ar.core.Session) -> <init>
+    6:10:void <init>() -> <init>
+    29:31:com.google.ar.core.ArImage[] acquireEnvironmentalHdrCubeMap() -> acquireEnvironmentalHdrCubeMap
+    32:37:com.google.ar.core.ArImage[] convertNativeArImageCubemapToArray(long[]) -> convertNativeArImageCubemapToArray
+    11:14:void finalize() -> finalize
+    17:18:void getColorCorrection(float[],int) -> getColorCorrection
+    26:28:float[] getEnvironmentalHdrAmbientSphericalHarmonics() -> getEnvironmentalHdrAmbientSphericalHarmonics
+    20:22:float[] getEnvironmentalHdrMainLightDirection() -> getEnvironmentalHdrMainLightDirection
+    23:25:float[] getEnvironmentalHdrMainLightIntensity() -> getEnvironmentalHdrMainLightIntensity
+    16:16:float getPixelIntensity() -> getPixelIntensity
+    15:15:com.google.ar.core.LightEstimate$State getState() -> getState
+    19:19:long getTimestamp() -> getTimestamp
+com.google.ar.core.LightEstimate$State -> com.google.ar.core.LightEstimate$State:
+    11:13:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    6:10:com.google.ar.core.LightEstimate$State forNumber(int) -> forNumber
+    2:2:com.google.ar.core.LightEstimate$State valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.LightEstimate$State[] values() -> values
+com.google.ar.core.Plane -> com.google.ar.core.Plane:
+    1:2:void <init>(long,com.google.ar.core.Session) -> <init>
+    3:4:void <init>() -> <init>
+    15:15:com.google.ar.core.Anchor createAnchor(com.google.ar.core.Pose) -> createAnchor
+    18:18:boolean equals(java.lang.Object) -> equals
+    14:14:java.util.Collection getAnchors() -> getAnchors
+    8:8:com.google.ar.core.Pose getCenterPose() -> getCenterPose
+    9:9:float getExtentX() -> getExtentX
+    10:10:float getExtentZ() -> getExtentZ
+    11:11:java.nio.FloatBuffer getPolygon() -> getPolygon
+    6:7:com.google.ar.core.Plane getSubsumedBy() -> getSubsumedBy
+    16:16:com.google.ar.core.TrackingState getTrackingState() -> getTrackingState
+    5:5:com.google.ar.core.Plane$Type getType() -> getType
+    17:17:int hashCode() -> hashCode
+    12:12:boolean isPoseInExtents(com.google.ar.core.Pose) -> isPoseInExtents
+    13:13:boolean isPoseInPolygon(com.google.ar.core.Pose) -> isPoseInPolygon
+com.google.ar.core.Plane$Type -> com.google.ar.core.Plane$Type:
+    11:14:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    6:10:com.google.ar.core.Plane$Type forNumber(int) -> forNumber
+    2:2:com.google.ar.core.Plane$Type valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.Plane$Type[] values() -> values
+com.google.ar.core.Point -> com.google.ar.core.Point:
+    1:2:void <init>(long,com.google.ar.core.Session) -> <init>
+    3:4:void <init>() -> <init>
+    10:10:com.google.ar.core.Anchor createAnchor(com.google.ar.core.Pose) -> createAnchor
+    13:13:boolean equals(java.lang.Object) -> equals
+    9:9:java.util.Collection getAnchors() -> getAnchors
+    6:8:com.google.ar.core.Point$OrientationMode getOrientationMode() -> getOrientationMode
+    5:5:com.google.ar.core.Pose getPose() -> getPose
+    11:11:com.google.ar.core.TrackingState getTrackingState() -> getTrackingState
+    12:12:int hashCode() -> hashCode
+com.google.ar.core.Point$OrientationMode -> com.google.ar.core.Point$OrientationMode:
+    11:13:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    6:10:com.google.ar.core.Point$OrientationMode fromNumber(int) -> fromNumber
+    2:2:com.google.ar.core.Point$OrientationMode valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.Point$OrientationMode[] values() -> values
+com.google.ar.core.PointCloud -> com.google.ar.core.PointCloud:
+    1:5:void <init>(com.google.ar.core.Session,long) -> <init>
+    6:10:void <init>() -> <init>
+    35:36:void close() -> close
+    14:17:void finalize() -> finalize
+    25:26:java.nio.IntBuffer getIds() -> getIds
+    18:19:java.nio.FloatBuffer getPoints() -> getPoints
+    32:33:long getTimestamp() -> getTimestamp
+    11:13:void release() -> release
+com.google.ar.core.Pose -> com.google.ar.core.Pose:
+    101:101:void <clinit>() -> <clinit>
+    1:4:void <init>(float,float,float,float,float,float,float) -> <init>
+    5:6:void <init>(float[],float[]) -> <init>
+    7:10:void <init>(float[],com.google.ar.core.Quaternion) -> <init>
+    15:21:com.google.ar.core.Pose compose(com.google.ar.core.Pose) -> compose
+    39:39:com.google.ar.core.Pose extractRotation() -> extractRotation
+    40:40:com.google.ar.core.Pose extractTranslation() -> extractTranslation
+    100:100:com.google.ar.core.Quaternion getQuaternion() -> getQuaternion
+    62:63:void getRotationQuaternion(float[],int) -> getRotationQuaternion
+    64:66:float[] getRotationQuaternion() -> getRotationQuaternion
+    80:84:void getTransformedAxis(int,float,float[],int) -> getTransformedAxis
+    85:87:float[] getTransformedAxis(int,float) -> getTransformedAxis
+    57:58:void getTranslation(float[],int) -> getTranslation
+    59:61:float[] getTranslation() -> getTranslation
+    88:88:float[] getXAxis() -> getXAxis
+    89:89:float[] getYAxis() -> getYAxis
+    90:90:float[] getZAxis() -> getZAxis
+    32:38:com.google.ar.core.Pose inverse() -> inverse
+    22:31:com.google.ar.core.Pose makeInterpolated(com.google.ar.core.Pose,com.google.ar.core.Pose,float) -> makeInterpolated
+    13:13:com.google.ar.core.Pose makeRotation(float,float,float,float) -> makeRotation
+    14:14:com.google.ar.core.Pose makeRotation(float[]) -> makeRotation
+    11:11:com.google.ar.core.Pose makeTranslation(float,float,float) -> makeTranslation
+    12:12:com.google.ar.core.Pose makeTranslation(float[]) -> makeTranslation
+    56:56:float qw() -> qw
+    53:53:float qx() -> qx
+    54:54:float qy() -> qy
+    55:55:float qz() -> qz
+    67:68:void rotateVector(float[],int,float[],int) -> rotateVector
+    69:71:float[] rotateVector(float[]) -> rotateVector
+    41:49:void toMatrix(float[],int) -> toMatrix
+    91:99:java.lang.String toString() -> toString
+    72:76:void transformPoint(float[],int,float[],int) -> transformPoint
+    77:79:float[] transformPoint(float[]) -> transformPoint
+    50:50:float tx() -> tx
+    51:51:float ty() -> ty
+    52:52:float tz() -> tz
+com.google.ar.core.Quaternion -> com.google.ar.core.Quaternion:
+    121:121:void <clinit>() -> <clinit>
+    1:7:void <init>() -> <init>
+    8:14:void <init>(com.google.ar.core.Quaternion) -> <init>
+    15:21:void <init>(float,float,float,float) -> <init>
+    22:26:void a(float,float,float,float) -> a
+    27:27:float a() -> a
+    31:35:void a(float[],int) -> a
+    37:43:com.google.ar.core.Quaternion a(com.google.ar.core.Quaternion) -> a
+    44:72:com.google.ar.core.Quaternion a(com.google.ar.core.Quaternion,com.google.ar.core.Quaternion,float) -> a
+    73:96:void a(float[],int,int) -> a
+    97:119:void a(com.google.ar.core.Quaternion,float[],int,float[],int) -> a
+    28:28:float b() -> b
+    29:29:float c() -> c
+    30:30:float d() -> d
+    36:36:com.google.ar.core.Quaternion e() -> e
+    120:120:java.lang.String toString() -> toString
+com.google.ar.core.R -> com.google.ar.core.R:
+    10:10:void <init>() -> <init>
+com.google.ar.core.R$id -> com.google.ar.core.R$id:
+    13:13:void <init>() -> <init>
+com.google.ar.core.R$layout -> com.google.ar.core.R$layout:
+    20:20:void <init>() -> <init>
+com.google.ar.core.R$raw -> com.google.ar.core.R$raw:
+    25:25:void <init>() -> <init>
+com.google.ar.core.R$string -> com.google.ar.core.R$string:
+    30:30:void <init>() -> <init>
+com.google.ar.core.Session -> com.google.ar.core.Session:
+    1:7:void <init>(android.content.Context) -> <init>
+    8:23:void <init>(android.content.Context,java.util.Set) -> <init>
+    24:28:void <init>(long) -> <init>
+    29:33:void <init>() -> <init>
+    48:49:void close() -> close
+    63:64:void configure(com.google.ar.core.Config) -> configure
+    99:103:java.util.Collection convertNativeAnchorsToCollection(long[]) -> convertNativeAnchorsToCollection
+    118:123:java.util.List convertNativeCameraConfigsToCollection(long[]) -> convertNativeCameraConfigsToCollection
+    104:110:java.util.Collection convertNativeTrackablesToCollection(java.lang.Class,long[]) -> convertNativeTrackablesToCollection
+    93:94:com.google.ar.core.Anchor createAnchor(com.google.ar.core.Pose) -> createAnchor
+    34:39:com.google.ar.core.Session createForSharedCamera(android.content.Context) -> createForSharedCamera
+    50:62:com.google.ar.core.Trackable createTrackable(long) -> createTrackable
+    140:142:java.nio.ByteBuffer directByteBufferOrDefault(java.nio.ByteBuffer) -> directByteBufferOrDefault
+    43:47:void finalize() -> finalize
+    87:87:java.util.Collection getAllAnchors() -> getAllAnchors
+    88:92:java.util.Collection getAllTrackables(java.lang.Class) -> getAllTrackables
+    115:117:com.google.ar.core.CameraConfig getCameraConfig() -> getCameraConfig
+    65:67:com.google.ar.core.Config getConfig() -> getConfig
+    68:69:void getConfig(com.google.ar.core.Config) -> getConfig
+    40:41:com.google.ar.core.SharedCamera getSharedCamera() -> getSharedCamera
+    111:112:java.util.List getSupportedCameraConfigs() -> getSupportedCameraConfigs
+    95:96:com.google.ar.core.Anchor hostCloudAnchor(com.google.ar.core.Anchor) -> hostCloudAnchor
+    72:72:boolean isSharedCameraUsed() -> isSharedCameraUsed
+    86:86:boolean isSupported(com.google.ar.core.Config) -> isSupported
+    136:139:void loadDynamicSymbolsAfterSessionCreate() -> loadDynamicSymbolsAfterSessionCreate
+    76:78:void pause() -> pause
+    79:81:void pauseSharedCameraIfInUse() -> pauseSharedCameraIfInUse
+    97:98:com.google.ar.core.Anchor resolveCloudAnchor(java.lang.String) -> resolveCloudAnchor
+    70:71:void resume() -> resume
+    113:114:void setCameraConfig(com.google.ar.core.CameraConfig) -> setCameraConfig
+    82:83:void setCameraTextureName(int) -> setCameraTextureName
+    84:85:void setDisplayGeometry(int,int,int) -> setDisplayGeometry
+    124:129:void throwExceptionFromArStatus(int) -> throwExceptionFromArStatus
+    73:75:com.google.ar.core.Frame update() -> update
+com.google.ar.core.Session$Feature -> com.google.ar.core.Session$Feature:
+    6:8:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    2:2:com.google.ar.core.Session$Feature valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.Session$Feature[] values() -> values
+com.google.ar.core.Session$a -> com.google.ar.core.Session$a:
+    com.google.ar.core.Session$a[] c -> b
+    int b -> c
+    5:6:void <clinit>() -> <clinit>
+    2:4:void <init>(java.lang.String,int,int) -> <init>
+    1:1:com.google.ar.core.Session$a[] values() -> values
+com.google.ar.core.Session$b -> com.google.ar.core.Session$b:
+    com.google.ar.core.Session$b c -> a
+    com.google.ar.core.Session$b a -> b
+    java.lang.Class h -> i
+    int b -> h
+    com.google.ar.core.Session$b[] i -> g
+    com.google.ar.core.Session$b f -> e
+    com.google.ar.core.Session$b g -> f
+    com.google.ar.core.Session$b d -> c
+    com.google.ar.core.Session$b e -> d
+    12:18:void <clinit>() -> <clinit>
+    2:5:void <init>(java.lang.String,int,int,java.lang.Class) -> <init>
+    11:11:void <init>(java.lang.String,int,int,java.lang.Class,byte) -> <init>
+    6:10:com.google.ar.core.Session$b a(java.lang.Class) -> a
+    1:1:com.google.ar.core.Session$b[] values() -> values
+com.google.ar.core.Session$c -> com.google.ar.core.Session$c:
+    com.google.ar.core.Session$c t -> k
+    com.google.ar.core.Session$c r -> i
+    com.google.ar.core.Session$c p -> g
+    com.google.ar.core.Session$c n -> e
+    com.google.ar.core.Session$c[] D -> A
+    com.google.ar.core.Session$c A -> s
+    com.google.ar.core.Session$c y -> q
+    com.google.ar.core.Session$c w -> o
+    com.google.ar.core.Session$c u -> m
+    com.google.ar.core.Session$c h -> y
+    com.google.ar.core.Session$c f -> w
+    com.google.ar.core.Session$c C -> u
+    java.lang.Class k -> C
+    java.lang.String l -> D
+    com.google.ar.core.Session$c s -> j
+    com.google.ar.core.Session$c q -> h
+    com.google.ar.core.Session$c o -> f
+    int j -> B
+    com.google.ar.core.Session$c m -> d
+    com.google.ar.core.Session$c z -> r
+    com.google.ar.core.Session$c x -> p
+    com.google.ar.core.Session$c v -> n
+    com.google.ar.core.Session$c d -> l
+    com.google.ar.core.Session$c i -> z
+    com.google.ar.core.Session$c g -> x
+    com.google.ar.core.Session$c e -> v
+    com.google.ar.core.Session$c B -> t
+    9:35:void <clinit>() -> <clinit>
+    2:3:void <init>(java.lang.String,int,int,java.lang.Class) -> <init>
+    4:8:void <init>(java.lang.String,int,int,java.lang.Class,java.lang.String) -> <init>
+    1:1:com.google.ar.core.Session$c[] values() -> values
+com.google.ar.core.SessionCreateJniHelper -> com.google.ar.core.SessionCreateJniHelper:
+    1:1:void <init>() -> <init>
+    15:20:boolean checkApkSignature(android.content.Context) -> checkApkSignature
+    10:14:int getArCoreApkVersionCode(android.content.Context) -> getArCoreApkVersionCode
+    2:9:int getMinApkVersion(android.content.Context) -> getMinApkVersion
+com.google.ar.core.SharedCamera -> com.google.ar.core.SharedCamera:
+    1:9:void <init>(com.google.ar.core.Session) -> <init>
+    75:75:void access$100(com.google.ar.core.SharedCamera,android.hardware.camera2.CameraDevice) -> access$100
+    84:84:void access$1000(com.google.ar.core.SharedCamera) -> access$1000
+    85:85:void access$1100(com.google.ar.core.SharedCamera,android.hardware.camera2.CameraCaptureSession) -> access$1100
+    86:86:void access$1200(com.google.ar.core.SharedCamera,android.hardware.camera2.CameraCaptureSession) -> access$1200
+    87:87:void access$1300(com.google.ar.core.SharedCamera,android.hardware.camera2.CameraCaptureSession) -> access$1300
+    76:76:com.google.ar.core.SharedCamera$a access$200(com.google.ar.core.SharedCamera) -> access$200
+    77:77:void access$300(com.google.ar.core.SharedCamera,android.hardware.camera2.CameraDevice) -> access$300
+    78:78:android.graphics.SurfaceTexture access$400(com.google.ar.core.SharedCamera) -> access$400
+    79:79:android.view.Surface access$500(com.google.ar.core.SharedCamera) -> access$500
+    80:80:void access$600(com.google.ar.core.SharedCamera,android.hardware.camera2.CameraDevice) -> access$600
+    81:81:void access$700(com.google.ar.core.SharedCamera) -> access$700
+    82:82:void access$800(com.google.ar.core.SharedCamera,android.hardware.camera2.CameraCaptureSession) -> access$800
+    83:83:void access$900(com.google.ar.core.SharedCamera,android.hardware.camera2.CameraCaptureSession) -> access$900
+    10:13:void close() -> close
+    25:25:android.hardware.camera2.CameraDevice$StateCallback createARDeviceStateCallback(android.hardware.camera2.CameraDevice$StateCallback,android.os.Handler) -> createARDeviceStateCallback
+    26:26:android.hardware.camera2.CameraCaptureSession$StateCallback createARSessionStateCallback(android.hardware.camera2.CameraCaptureSession$StateCallback,android.os.Handler) -> createARSessionStateCallback
+    18:24:java.util.List getArCoreSurfaces() -> getArCoreSurfaces
+    57:59:android.media.ImageReader getCpuImageReader() -> getCpuImageReader
+    60:62:android.media.ImageReader getCpuImageReaderMotionTracking() -> getCpuImageReaderMotionTracking
+    66:68:android.view.Surface getGpuSurface() -> getGpuSurface
+    63:65:android.graphics.SurfaceTexture getGpuSurfaceTexture() -> getGpuSurfaceTexture
+    17:17:android.graphics.SurfaceTexture getSurfaceTexture() -> getSurfaceTexture
+    71:74:void lambda$setDummyOnImageAvailableListener$0$SharedCamera(android.media.ImageReader) -> lambda$setDummyOnImageAvailableListener$0$SharedCamera
+    47:48:void onCaptureSessionActive(android.hardware.camera2.CameraCaptureSession) -> onCaptureSessionActive
+    49:50:void onCaptureSessionClosed(android.hardware.camera2.CameraCaptureSession) -> onCaptureSessionClosed
+    51:52:void onCaptureSessionConfigureFailed(android.hardware.camera2.CameraCaptureSession) -> onCaptureSessionConfigureFailed
+    53:54:void onCaptureSessionConfigured(android.hardware.camera2.CameraCaptureSession) -> onCaptureSessionConfigured
+    55:56:void onCaptureSessionReady(android.hardware.camera2.CameraCaptureSession) -> onCaptureSessionReady
+    40:42:void onDeviceClosed(android.hardware.camera2.CameraDevice) -> onDeviceClosed
+    43:46:void onDeviceDisconnected(android.hardware.camera2.CameraDevice) -> onDeviceDisconnected
+    36:39:void onDeviceOpened(android.hardware.camera2.CameraDevice) -> onDeviceOpened
+    27:29:void pause() -> pause
+    14:16:void setAppSurfaces(java.lang.String,java.util.List) -> setAppSurfaces
+    69:70:void setCaptureCallback(android.hardware.camera2.CameraCaptureSession$CaptureCallback,android.os.Handler) -> setCaptureCallback
+    33:35:void setDummyListenerToAvoidImageBufferStarvation() -> setDummyListenerToAvoidImageBufferStarvation
+    30:32:void setDummyOnImageAvailableListener(android.media.ImageReader) -> setDummyOnImageAvailableListener
+com.google.ar.core.SharedCamera$a -> com.google.ar.core.SharedCamera$a:
+    1:5:void <init>() -> <init>
+    17:17:void <init>(byte) -> <init>
+    6:6:android.hardware.camera2.CameraDevice a() -> a
+    7:8:void a(android.hardware.camera2.CameraDevice) -> a
+    9:10:void a(java.lang.String,java.util.List) -> a
+    12:13:void a(android.graphics.SurfaceTexture) -> a
+    15:16:void a(android.view.Surface) -> a
+    11:11:android.graphics.SurfaceTexture b() -> b
+    14:14:android.view.Surface c() -> c
+com.google.ar.core.TrackableBase -> com.google.ar.core.TrackableBase:
+    1:4:void <init>(long,com.google.ar.core.Session) -> <init>
+    18:18:com.google.ar.core.Anchor createAnchor(com.google.ar.core.Pose) -> createAnchor
+    5:8:boolean equals(java.lang.Object) -> equals
+    10:14:void finalize() -> finalize
+    19:21:java.util.Collection getAnchors() -> getAnchors
+    15:17:com.google.ar.core.TrackingState getTrackingState() -> getTrackingState
+    9:9:int hashCode() -> hashCode
+    24:24:int internalGetType(long,long) -> internalGetType
+    22:23:void internalReleaseNativeHandle(long) -> internalReleaseNativeHandle
+com.google.ar.core.TrackingFailureReason -> com.google.ar.core.TrackingFailureReason:
+    11:16:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    6:10:com.google.ar.core.TrackingFailureReason forNumber(int) -> forNumber
+    2:2:com.google.ar.core.TrackingFailureReason valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.TrackingFailureReason[] values() -> values
+com.google.ar.core.TrackingState -> com.google.ar.core.TrackingState:
+    11:14:void <clinit>() -> <clinit>
+    3:5:void <init>(java.lang.String,int,int) -> <init>
+    6:10:com.google.ar.core.TrackingState forNumber(int) -> forNumber
+    2:2:com.google.ar.core.TrackingState valueOf(java.lang.String) -> valueOf
+    1:1:com.google.ar.core.TrackingState[] values() -> values
+com.google.ar.core.a -> com.google.ar.core.a:
+    1:1:void <init>(java.lang.String,int,int) -> <init>
+    2:2:boolean isUnknown() -> isUnknown
+com.google.ar.core.aa -> com.google.ar.core.b:
+    1:2:void <init>() -> <init>
+com.google.ar.core.ab -> com.google.ar.core.c:
+    1:4:void <init>(android.content.Context,com.google.ar.core.p) -> <init>
+    14:15:void a() -> a
+    5:13:void run() -> run
+com.google.ar.core.ac -> com.google.ar.core.d:
+    1:1:void <init>(java.util.concurrent.atomic.AtomicReference) -> <init>
+    2:3:void a(com.google.ar.core.ArCoreApk$Availability) -> a
+com.google.ar.core.ad -> com.google.ar.core.e:
+    1:1:void <init>(java.lang.String,int,int,java.lang.Class) -> <init>
+    2:2:com.google.ar.core.Trackable a(long,com.google.ar.core.Session) -> a
+com.google.ar.core.ae -> com.google.ar.core.f:
+    1:1:void <init>(java.lang.String,int,int,java.lang.Class) -> <init>
+    2:2:com.google.ar.core.Trackable a(long,com.google.ar.core.Session) -> a
+com.google.ar.core.af -> com.google.ar.core.g:
+    1:1:void <init>(java.lang.String,int,int,java.lang.Class) -> <init>
+    2:2:com.google.ar.core.Trackable a(long,com.google.ar.core.Session) -> a
+com.google.ar.core.ag -> com.google.ar.core.h:
+    1:1:void <init>(java.lang.String,int,int,java.lang.Class) -> <init>
+    2:2:com.google.ar.core.Trackable a(long,com.google.ar.core.Session) -> a
+com.google.ar.core.ah -> com.google.ar.core.i:
+    1:1:void <init>(java.lang.String,int,int,java.lang.Class) -> <init>
+    2:2:com.google.ar.core.Trackable a(long,com.google.ar.core.Session) -> a
+com.google.ar.core.ai -> com.google.ar.core.j:
+    1:1:void <init>(java.lang.String,int,int,java.lang.Class) -> <init>
+    2:2:com.google.ar.core.Trackable a(long,com.google.ar.core.Session) -> a
+com.google.ar.core.aj -> com.google.ar.core.k:
+    45:45:void <init>(com.google.ar.core.h) -> <init>
+    1:5:com.google.ar.core.ArCoreApk$Availability a(android.content.Context) -> a
+    39:44:android.net.Uri a(java.lang.String) -> a
+    46:49:void a(com.google.ar.core.ArCoreApk$Availability) -> a
+    8:37:android.app.PendingIntent b(android.content.Context) -> b
+com.google.ar.core.ak -> com.google.ar.core.l:
+com.google.ar.core.al -> com.google.ar.core.m:
+    1:3:void run() -> run
+com.google.ar.core.am -> com.google.ar.core.n:
+    1:1:void <init>(com.google.ar.core.SharedCamera,android.os.Handler,android.hardware.camera2.CameraDevice$StateCallback) -> <init>
+    2:4:void onClosed(android.hardware.camera2.CameraDevice) -> onClosed
+    11:13:void onDisconnected(android.hardware.camera2.CameraDevice) -> onDisconnected
+    14:16:void onError(android.hardware.camera2.CameraDevice,int) -> onError
+    5:10:void onOpened(android.hardware.camera2.CameraDevice) -> onOpened
+com.google.ar.core.an -> com.google.ar.core.o:
+    1:3:void run() -> run
+com.google.ar.core.ao -> com.google.ar.core.p:
+    1:3:void run() -> run
+com.google.ar.core.ap -> com.google.ar.core.q:
+    1:1:void <init>(com.google.ar.core.SharedCamera,android.os.Handler,android.hardware.camera2.CameraCaptureSession$StateCallback) -> <init>
+    17:19:void onActive(android.hardware.camera2.CameraCaptureSession) -> onActive
+    2:4:void onClosed(android.hardware.camera2.CameraCaptureSession) -> onClosed
+    11:13:void onConfigureFailed(android.hardware.camera2.CameraCaptureSession) -> onConfigureFailed
+    5:10:void onConfigured(android.hardware.camera2.CameraCaptureSession) -> onConfigured
+    14:16:void onReady(android.hardware.camera2.CameraCaptureSession) -> onReady
+com.google.ar.core.aq -> com.google.ar.core.r:
+    1:3:void run() -> run
+com.google.ar.core.ar -> com.google.ar.core.s:
+    1:3:void run() -> run
+com.google.ar.core.as -> com.google.ar.core.t:
+    1:3:void run() -> run
+com.google.ar.core.at -> com.google.ar.core.u:
+    1:3:void run() -> run
+com.google.ar.core.au -> com.google.ar.core.v:
+    1:3:void run() -> run
+com.google.ar.core.av -> com.google.ar.core.w:
+    1:3:void run() -> run
+com.google.ar.core.b -> com.google.ar.core.x:
+    1:1:void <init>(java.lang.String,int,int) -> <init>
+    2:2:boolean isUnknown() -> isUnknown
+com.google.ar.core.c -> com.google.ar.core.y:
+    1:1:void <init>(java.lang.String,int,int) -> <init>
+    3:3:boolean isTransient() -> isTransient
+    2:2:boolean isUnknown() -> isUnknown
+com.google.ar.core.d -> com.google.ar.core.z:
+    1:1:void <init>(java.lang.String,int,int) -> <init>
+    2:2:boolean isSupported() -> isSupported
+com.google.ar.core.e -> com.google.ar.core.A:
+    1:1:void <init>(java.lang.String,int,int) -> <init>
+    2:2:boolean isUnsupported() -> isUnsupported
+com.google.ar.core.exceptions.AnchorNotSupportedForHostingException -> com.google.ar.core.exceptions.AnchorNotSupportedForHostingException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.CameraNotAvailableException -> com.google.ar.core.exceptions.CameraNotAvailableException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.CloudAnchorsNotConfiguredException -> com.google.ar.core.exceptions.CloudAnchorsNotConfiguredException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.DataInvalidFormatException -> com.google.ar.core.exceptions.DataInvalidFormatException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.DataUnsupportedVersionException -> com.google.ar.core.exceptions.DataUnsupportedVersionException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.DeadlineExceededException -> com.google.ar.core.exceptions.DeadlineExceededException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.FatalException -> com.google.ar.core.exceptions.FatalException:
+    1:1:void <init>() -> <init>
+    2:3:void <init>(java.lang.String) -> <init>
+    4:5:void <init>(java.lang.String,java.lang.Throwable) -> <init>
+com.google.ar.core.exceptions.ImageInsufficientQualityException -> com.google.ar.core.exceptions.ImageInsufficientQualityException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.MissingGlContextException -> com.google.ar.core.exceptions.MissingGlContextException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.NotTrackingException -> com.google.ar.core.exceptions.NotTrackingException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.NotYetAvailableException -> com.google.ar.core.exceptions.NotYetAvailableException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.ResourceExhaustedException -> com.google.ar.core.exceptions.ResourceExhaustedException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.SessionNotPausedException -> com.google.ar.core.exceptions.SessionNotPausedException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.SessionPausedException -> com.google.ar.core.exceptions.SessionPausedException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.TextureNotSetException -> com.google.ar.core.exceptions.TextureNotSetException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.UnavailableApkTooOldException -> com.google.ar.core.exceptions.UnavailableApkTooOldException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.UnavailableArcoreNotInstalledException -> com.google.ar.core.exceptions.UnavailableArcoreNotInstalledException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.UnavailableDeviceNotCompatibleException -> com.google.ar.core.exceptions.UnavailableDeviceNotCompatibleException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.UnavailableException -> com.google.ar.core.exceptions.UnavailableException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.UnavailableSdkTooOldException -> com.google.ar.core.exceptions.UnavailableSdkTooOldException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.UnavailableUserDeclinedInstallationException -> com.google.ar.core.exceptions.UnavailableUserDeclinedInstallationException:
+    1:1:void <init>() -> <init>
+com.google.ar.core.exceptions.UnsupportedConfigurationException -> com.google.ar.core.exceptions.UnsupportedConfigurationException:
+    1:2:void <init>() -> <init>
+    3:4:void <init>(java.lang.String) -> <init>
+com.google.ar.core.f -> com.google.ar.core.B:
+    1:1:void <init>(java.lang.String,int,int) -> <init>
+    2:2:boolean isSupported() -> isSupported
+com.google.ar.core.g -> com.google.ar.core.C:
+    1:1:void <init>(java.lang.String,int,int) -> <init>
+    2:2:boolean isSupported() -> isSupported
+com.google.ar.core.h -> com.google.ar.core.D:
+    com.google.ar.core.h b -> a
+    java.lang.Exception a -> b
+    146:146:void <clinit>() -> <clinit>
+    1:1:void <init>() -> <init>
+    2:2:com.google.ar.core.h a() -> a
+    75:82:com.google.ar.core.ArCoreApk$InstallStatus a(android.app.Activity) -> a
+    83:82:com.google.ar.core.n a(android.content.Context) -> a
+    144:144:com.google.ar.core.ArCoreApk$Availability a(com.google.ar.core.h,com.google.ar.core.ArCoreApk$Availability) -> a
+    145:145:boolean a(com.google.ar.core.h,boolean) -> a
+    90:89:void b() -> b
+    97:99:boolean b(android.content.Context) -> b
+    101:102:boolean c(android.content.Context) -> c
+    103:103:boolean c() -> c
+    3:11:com.google.ar.core.ArCoreApk$Availability checkAvailability(android.content.Context) -> checkAvailability
+    104:111:int d(android.content.Context) -> d
+    112:111:void e(android.content.Context) -> e
+    35:36:com.google.ar.core.ArCoreApk$InstallStatus requestInstall(android.app.Activity,boolean,com.google.ar.core.ArCoreApk$InstallBehavior,com.google.ar.core.ArCoreApk$UserMessageType) -> requestInstall
+    69:74:com.google.ar.core.ArCoreApk$InstallStatus requestInstall(android.app.Activity,boolean) -> requestInstall
+com.google.ar.core.i -> com.google.ar.core.E:
+    1:2:void <init>() -> <init>
+    3:2:com.google.ar.core.AugmentedFace a(long,com.google.ar.core.Session) -> a
+com.google.ar.core.j -> com.google.ar.core.F:
+    1:1:void <init>(int,float,boolean) -> <init>
+    2:2:boolean removeEldestEntry(java.util.Map$Entry) -> removeEldestEntry
+com.google.ar.core.k -> com.google.ar.core.G:
+    1:1:void <init>(com.google.ar.core.InstallActivity) -> <init>
+    2:3:void onClick(android.view.View) -> onClick
+com.google.ar.core.l -> com.google.ar.core.H:
+    1:1:void <init>(com.google.ar.core.InstallActivity,int,int,int) -> <init>
+    2:8:void onAnimationUpdate(android.animation.ValueAnimator) -> onAnimationUpdate
+com.google.ar.core.m -> com.google.ar.core.I:
+    1:1:void <init>(com.google.ar.core.InstallActivity) -> <init>
+    2:4:void onClick(android.view.View) -> onClick
+com.google.ar.core.n -> com.google.ar.core.J:
+    1:1:void <init>() -> <init>
+    42:46:void <init>(byte) -> <init>
+    2:1:void a(android.content.Context) -> a
+    12:11:void a() -> a
+    21:20:void a(android.content.Context,com.google.ar.core.ArCoreApk$a) -> a
+    27:41:void a(android.app.Activity,com.google.ar.core.p) -> a
+    54:66:void a(android.app.Activity,android.os.Bundle,com.google.ar.core.p) -> a
+    74:73:void a(android.os.IBinder) -> a
+    87:86:void a(java.lang.Runnable) -> a
+    93:93:void a(com.google.ar.core.n,android.os.IBinder) -> a
+    94:94:void a(com.google.ar.core.n) -> a
+    98:98:void a(com.google.ar.core.n,android.app.Activity,com.google.ar.core.p) -> a
+    99:99:void a(com.google.ar.core.n,android.app.Activity,android.os.Bundle,com.google.ar.core.p) -> a
+    47:53:void b(android.app.Activity,com.google.ar.core.p) -> b
+    67:69:android.os.Bundle b() -> b
+    95:95:android.os.Bundle b(com.google.ar.core.n) -> b
+    70:73:void c() -> c
+    96:96:com.google.a.b.a.a.a.b c(com.google.ar.core.n) -> c
+    82:81:void d() -> d
+    97:97:void d(com.google.ar.core.n) -> d
+com.google.ar.core.o -> com.google.ar.core.K:
+    1:1:void <init>(com.google.ar.core.InstallActivity) -> <init>
+    2:3:void onAnimationEnd(android.animation.Animator) -> onAnimationEnd
+com.google.ar.core.p -> com.google.ar.core.L:
+    22:23:void <init>(com.google.ar.core.InstallActivity) -> <init>
+    1:13:void a(com.google.ar.core.q) -> a
+    14:21:void a(java.lang.Exception) -> a
+com.google.ar.core.q -> com.google.ar.core.M:
+    3:6:void <clinit>() -> <clinit>
+    2:2:void <init>(java.lang.String,int) -> <init>
+    1:1:com.google.ar.core.q[] values() -> values
+com.google.ar.core.s -> com.google.ar.core.N:
+    android.content.Context b -> a
+    com.google.ar.core.ArCoreApk$a a -> b
+    1:1:void <init>(com.google.ar.core.n,android.content.Context,com.google.ar.core.ArCoreApk$a) -> <init>
+    2:10:void run() -> run
+com.google.ar.core.t -> com.google.ar.core.O:
+    1:1:void <init>(com.google.ar.core.n) -> <init>
+    2:3:void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    4:5:void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.google.ar.core.u -> com.google.ar.core.P:
+    1:1:void <init>(com.google.ar.core.n,com.google.ar.core.p) -> <init>
+    2:13:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.google.ar.core.v -> com.google.ar.core.Q:
+    com.google.ar.core.s a -> b
+    1:1:void <init>(com.google.ar.core.s) -> <init>
+    16:16:void a(android.os.Bundle) -> a
+    17:17:void a() -> a
+    2:12:void b(android.os.Bundle) -> b
+com.google.ar.core.w -> com.google.ar.core.S:
+    java.util.concurrent.atomic.AtomicBoolean a -> b
+    com.google.ar.core.x b -> c
+    1:1:void <init>(com.google.ar.core.x,java.util.concurrent.atomic.AtomicBoolean) -> <init>
+    2:20:void a(android.os.Bundle) -> a
+    32:32:void a() -> a
+    31:31:void b(android.os.Bundle) -> b
+com.google.ar.core.x -> com.google.ar.core.T:
+    1:1:void <init>(com.google.ar.core.n,android.app.Activity,com.google.ar.core.p) -> <init>
+    2:13:void run() -> run
+com.google.ar.core.y -> com.google.ar.core.U:
+    1:4:void <clinit>() -> <clinit>
+com.google.ar.core.z -> com.google.ar.core.V:
+    1:1:void <init>(com.google.ar.core.x,java.util.concurrent.atomic.AtomicBoolean) -> <init>
+    2:5:void run() -> run
+com.google.vr.dynamite.client.DynamiteClient -> com.google.vr.dynamite.client.DynamiteClient:
+    69:69:void <clinit>() -> <clinit>
+    1:1:void <init>() -> <init>
+    2:1:int checkVersion(android.content.Context,java.lang.String,java.lang.String,java.lang.String) -> checkVersion
+    41:40:java.lang.ClassLoader getRemoteClassLoader(android.content.Context,java.lang.String,java.lang.String) -> getRemoteClassLoader
+    58:57:android.content.Context getRemoteContext(android.content.Context,java.lang.String,java.lang.String) -> getRemoteContext
+    45:44:java.lang.ClassLoader getRemoteDexClassLoader(android.content.Context,java.lang.String) -> getRemoteDexClassLoader
+    64:63:com.google.vr.dynamite.client.e getRemoteLibraryLoaderFromInfo(com.google.vr.dynamite.client.d) -> getRemoteLibraryLoaderFromInfo
+    27:26:long loadNativeRemoteLibrary(android.content.Context,java.lang.String,java.lang.String) -> loadNativeRemoteLibrary
+com.google.vr.dynamite.client.IObjectWrapper$a -> com.google.vr.dynamite.client.IObjectWrapper$a:
+    1:2:void <init>() -> <init>
+com.google.vr.dynamite.client.ObjectWrapper -> com.google.vr.dynamite.client.ObjectWrapper:
+    1:3:void <init>(java.lang.Object) -> <init>
+    4:4:com.google.vr.dynamite.client.IObjectWrapper a(java.lang.Object) -> a
+    5:36:java.lang.Object unwrap(com.google.vr.dynamite.client.IObjectWrapper,java.lang.Class) -> unwrap
+com.google.vr.dynamite.client.a -> com.google.vr.dynamite.client.a:
+    1:2:void <init>(android.os.IBinder) -> <init>
+    3:16:com.google.vr.dynamite.client.INativeLibraryLoader newNativeLibraryLoader(com.google.vr.dynamite.client.IObjectWrapper,com.google.vr.dynamite.client.IObjectWrapper) -> newNativeLibraryLoader
+com.google.vr.dynamite.client.b -> com.google.vr.dynamite.client.b:
+    1:2:void <init>(android.os.IBinder) -> <init>
+    9:14:int checkVersion(java.lang.String) -> checkVersion
+    3:8:long initializeAndLoadNativeLibrary(java.lang.String) -> initializeAndLoadNativeLibrary
+com.google.vr.dynamite.client.c -> com.google.vr.dynamite.client.c:
+    1:3:void <init>(int) -> <init>
+    4:9:java.lang.String getMessage() -> getMessage
+com.google.vr.dynamite.client.d -> com.google.vr.dynamite.client.d:
+    1:4:void <init>(java.lang.String,java.lang.String) -> <init>
+    5:5:java.lang.String a() -> a
+    6:13:boolean equals(java.lang.Object) -> equals
+    14:16:int hashCode() -> hashCode
+    17:26:java.lang.String toString() -> toString
+com.google.vr.dynamite.client.e -> com.google.vr.dynamite.client.e:
+    1:3:void <init>(com.google.vr.dynamite.client.d) -> <init>
+    4:3:com.google.vr.dynamite.client.ILoadedInstanceCreator a(android.content.Context) -> a
+    24:27:android.os.IBinder a(java.lang.ClassLoader,java.lang.String) -> a
+    16:15:android.content.Context b(android.content.Context) -> b
+com.google.vr.dynamite.client.f -> com.google.vr.dynamite.client.f:
+    1:5:void <init>(int,int,int) -> <init>
+    6:9:boolean equals(java.lang.Object) -> equals
+    10:10:int hashCode() -> hashCode
+    11:11:java.lang.String toString() -> toString
+com.unity3d.player.BuildConfig -> com.unity3d.player.BuildConfig:
+    7:7:void <clinit>() -> <clinit>
+    6:6:void <init>() -> <init>
+com.unity3d.player.R -> com.unity3d.player.R:
+    10:10:void <init>() -> <init>
+com.unity3d.player.R$id -> com.unity3d.player.R$id:
+    13:13:void <init>() -> <init>
+com.unity3d.player.R$layout -> com.unity3d.player.R$layout:
+    20:20:void <init>() -> <init>
+com.unity3d.player.R$raw -> com.unity3d.player.R$raw:
+    25:25:void <init>() -> <init>
+com.unity3d.player.R$string -> com.unity3d.player.R$string:
+    30:30:void <init>() -> <init>
+com.unity3d.player.R$style -> com.unity3d.player.R$style:
+    39:39:void <init>() -> <init>
+com.unity3d.player.UnityPlayerActivity -> com.unity3d.player.UnityPlayerActivity:
+    16:16:void <init>() -> <init>
+    122:124:boolean dispatchKeyEvent(android.view.KeyEvent) -> dispatchKeyEvent
+    107:109:void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    35:44:void onCreate(android.os.Bundle) -> onCreate
+    69:71:void onDestroy() -> onDestroy
+    131:131:boolean onGenericMotionEvent(android.view.MotionEvent) -> onGenericMotionEvent
+    129:129:boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    128:128:boolean onKeyUp(int,android.view.KeyEvent) -> onKeyUp
+    90:92:void onLowMemory() -> onLowMemory
+    62:64:void onNewIntent(android.content.Intent) -> onNewIntent
+    76:78:void onPause() -> onPause
+    83:85:void onResume() -> onResume
+    130:130:boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    97:102:void onTrimMemory(int) -> onTrimMemory
+    53:54:void onUnityPlayerQuitted() -> onUnityPlayerQuitted
+    48:49:void onUnityPlayerUnloaded() -> onUnityPlayerUnloaded
+    114:116:void onWindowFocusChanged(boolean) -> onWindowFocusChanged
+    29:29:java.lang.String updateUnityCommandLineArguments(java.lang.String) -> updateUnityCommandLineArguments
+com.vuforia.VuforiaUnityPlayer.DebugLog -> com.vuforia.VuforiaUnityPlayer.DebugLog:
+    15:15:void <init>() -> <init>
+    33:34:void LOGD(java.lang.String) -> LOGD
+    23:24:void LOGE(java.lang.String) -> LOGE
+    38:39:void LOGI(java.lang.String) -> LOGI
+    28:29:void LOGW(java.lang.String) -> LOGW
+com.vuforia.VuforiaUnityPlayer.OrientationUtility -> com.vuforia.VuforiaUnityPlayer.OrientationUtility:
+    23:23:void <init>() -> <init>
+    36:72:int getSurfaceOrientation(android.app.Activity) -> getSurfaceOrientation
+com.vuforia.VuforiaUnityPlayer.VuforiaInitializer -> com.vuforia.VuforiaUnityPlayer.VuforiaInitializer:
+    22:22:void <init>() -> <init>
+    47:48:void initPlatform() -> initPlatform
+    63:78:boolean loadLibrary(java.lang.String) -> loadLibrary
+    38:41:void loadNativeLibraries() -> loadNativeLibraries
+    55:56:void setInitParameters(android.app.Activity,int,java.lang.String) -> setInitParameters
+com.vuforia.ar.pl.Camera1_Preview -> com.vuforia.ar.pl.Camera1_Preview:
+    194:205:void <clinit>() -> <clinit>
+    230:234:void <init>() -> <init>
+    38:38:java.util.HashMap access$000(com.vuforia.ar.pl.Camera1_Preview) -> access$000
+    38:38:com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo access$100(com.vuforia.ar.pl.Camera1_Preview,int) -> access$100
+    248:273:boolean checkPermission() -> checkPermission
+    668:718:boolean checkSamsungHighFPS(com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo) -> checkSamsungHighFPS
+    1368:1404:boolean close(int) -> close
+    880:883:int getBitsPerPixel(int) -> getBitsPerPixel
+    395:398:com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo getCameraCacheInfo(int) -> getCameraCacheInfo
+    1413:1552:int[] getCameraCapabilities(int) -> getCameraCapabilities
+    282:370:int getCameraDeviceIndex(int,int,int) -> getCameraDeviceIndex
+    377:389:android.hardware.Camera$Parameters getCameraParameters(android.hardware.Camera) -> getCameraParameters
+    1625:1661:int[] getCaptureInfo(int) -> getCaptureInfo
+    1120:1131:int getDeviceID(int) -> getDeviceID
+    1070:1110:int getDirection(int) -> getDirection
+    1876:1883:java.lang.String getFlattenedParameters(int) -> getFlattenedParameters
+    982:1019:int getNumberOfCameras() -> getNumberOfCameras
+    1031:1061:int getOrientation(int) -> getOrientation
+    2667:2677:int getStatus(int) -> getStatus
+    2402:2409:java.lang.Object getTypedCameraParameter(int,int) -> getTypedCameraParameter
+    1842:1849:java.lang.String getUntypedCameraParameter(int,java.lang.String) -> getUntypedCameraParameter
+    960:965:boolean init() -> init
+    893:944:void onPreviewFrame(byte[],android.hardware.Camera) -> onPreviewFrame
+    1143:1330:int open(long,int,int,int,java.lang.String,int[],int[]) -> open
+    1752:1766:boolean setBatchParameters(int,java.lang.String) -> setBatchParameters
+    826:855:void setCameraCapsBit(com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo,int,int,boolean) -> setCameraCapsBit
+    537:602:boolean setCameraCaptureParams(com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo,android.hardware.Camera$Parameters,int[],int[]) -> setCameraCaptureParams
+    464:529:boolean setCameraPreviewFps(int,android.hardware.Camera$Parameters) -> setCameraPreviewFps
+    1561:1607:boolean setCaptureInfo(int,int[],int[]) -> setCaptureInfo
+    411:420:boolean setCustomCameraParams(android.hardware.Camera$Parameters,java.lang.String) -> setCustomCameraParams
+    973:974:void setSurfaceManager(com.vuforia.ar.pl.SurfaceManager) -> setSurfaceManager
+    1905:1912:boolean setTypedCameraParameter(int,int,java.lang.Object) -> setTypedCameraParameter
+    1794:1801:boolean setUntypedCameraParameter(int,java.lang.String,java.lang.String) -> setUntypedCameraParameter
+    725:751:boolean setupPreviewBuffer(com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo) -> setupPreviewBuffer
+    1674:1710:boolean start(int) -> start
+    1719:1746:boolean stop(int) -> stop
+    860:874:int translateImageFormat(int,boolean) -> translateImageFormat
+com.vuforia.ar.pl.Camera1_Preview$1 -> com.vuforia.ar.pl.Camera1_Preview$1:
+    2347:2347:void <init>(com.vuforia.ar.pl.Camera1_Preview) -> <init>
+    2351:2375:void onAutoFocus(boolean,android.hardware.Camera) -> onAutoFocus
+com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo -> com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo:
+    48:48:void <init>(com.vuforia.ar.pl.Camera1_Preview) -> <init>
+com.vuforia.ar.pl.Camera2_Preview -> com.vuforia.ar.pl.Camera2_Preview:
+    247:274:void <clinit>() -> <clinit>
+    673:677:void <init>() -> <init>
+    66:66:java.util.HashMap access$000(com.vuforia.ar.pl.Camera2_Preview) -> access$000
+    66:66:java.util.Vector access$100(com.vuforia.ar.pl.Camera2_Preview) -> access$100
+    66:66:void access$200(com.vuforia.ar.pl.Camera2_Preview,long,int,int,int,int[],int,java.nio.ByteBuffer,java.lang.Object) -> access$200
+    66:66:long access$300(com.vuforia.ar.pl.Camera2_Preview,java.nio.ByteBuffer) -> access$300
+    66:66:java.util.Vector access$500(com.vuforia.ar.pl.Camera2_Preview) -> access$500
+    66:66:java.util.concurrent.Semaphore access$600(com.vuforia.ar.pl.Camera2_Preview) -> access$600
+    1117:1132:boolean checkCameraManager() -> checkCameraManager
+    1361:1372:boolean checkMinimumHardwareSupportLevel(int,int) -> checkMinimumHardwareSupportLevel
+    692:716:boolean checkPermission() -> checkPermission
+    1163:1166:void cleanupHandlerThread(com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo) -> cleanupHandlerThread
+    1697:1742:boolean close(int) -> close
+    1145:1158:int compareHardwareSupportLevel(int,int) -> compareHardwareSupportLevel
+    1061:1064:int getBitsPerPixel(int) -> getBitsPerPixel
+    801:804:com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo getCameraCacheInfo(int) -> getCameraCacheInfo
+    1750:1784:int[] getCameraCapabilities(int) -> getCameraCapabilities
+    723:794:int getCameraDeviceIndex(int,int,int) -> getCameraDeviceIndex
+    2000:2050:int[] getCaptureInfo(int) -> getCaptureInfo
+    1339:1350:int getDeviceID(int) -> getDeviceID
+    1285:1330:int getDirection(int) -> getDirection
+    2498:2505:java.lang.String getNamedParameter(int,int) -> getNamedParameter
+    2479:2486:int getNamedParameterCount(int) -> getNamedParameterCount
+    1209:1235:int getNumberOfCameras() -> getNumberOfCameras
+    1245:1277:int getOrientation(int) -> getOrientation
+    3686:3696:int getStatus(int) -> getStatus
+    1073:1113:java.util.List getSupportedPreviewFrameRates(android.hardware.camera2.CameraCharacteristics) -> getSupportedPreviewFrameRates
+    3201:3208:java.lang.Object getTypedCameraParameter(int,int) -> getTypedCameraParameter
+    2292:2299:java.lang.Object getUntypedCameraParameter(int,java.lang.String) -> getUntypedCameraParameter
+    2398:2405:int getUntypedCameraParameterType(int,java.lang.String) -> getUntypedCameraParameterType
+    1192:1198:boolean init() -> init
+    874:881:android.hardware.camera2.CaptureRequest$Key mapStringToKey(java.lang.String,android.hardware.camera2.CameraCharacteristics,java.lang.Object) -> mapStringToKey
+    1412:1623:int open(long,int,int,int,java.lang.String,int[],int[]) -> open
+    2192:2206:boolean setBatchParameters(int,java.lang.String) -> setBatchParameters
+    1013:1042:void setCameraCapsBit(com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo,int,int,boolean) -> setCameraCapsBit
+    889:906:boolean setCameraCaptureParams(com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo,int[],int[]) -> setCameraCaptureParams
+    1963:1991:boolean setCaptureInfo(int,int[],int[]) -> setCaptureInfo
+    815:816:boolean setCustomCameraParams(com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo,java.lang.String) -> setCustomCameraParams
+    2540:2547:boolean setTypedCameraParameter(int,int,java.lang.Object) -> setTypedCameraParameter
+    2220:2227:boolean setUntypedCameraParameter(int,java.lang.String,java.lang.Object) -> setUntypedCameraParameter
+    988:1007:boolean setupPreviewBuffer(com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo) -> setupPreviewBuffer
+    2063:2150:boolean start(int) -> start
+    2159:2186:boolean stop(int) -> stop
+    1047:1055:int translateImageFormatPLToAndroid(int) -> translateImageFormatPLToAndroid
+com.vuforia.ar.pl.Camera2_Preview$1 -> com.vuforia.ar.pl.Camera2_Preview$1:
+    1525:1525:void <init>(com.vuforia.ar.pl.Camera2_Preview) -> <init>
+    1574:1576:void onDisconnected(android.hardware.camera2.CameraDevice) -> onDisconnected
+    1567:1569:void onError(android.hardware.camera2.CameraDevice,int) -> onError
+    1529:1561:void onOpened(android.hardware.camera2.CameraDevice) -> onOpened
+com.vuforia.ar.pl.Camera2_Preview$2 -> com.vuforia.ar.pl.Camera2_Preview$2:
+    2090:2090:void <init>(com.vuforia.ar.pl.Camera2_Preview) -> <init>
+    2115:2117:void onConfigureFailed(android.hardware.camera2.CameraCaptureSession) -> onConfigureFailed
+    2094:2111:void onConfigured(android.hardware.camera2.CameraCaptureSession) -> onConfigured
+com.vuforia.ar.pl.Camera2_Preview$AutofocusRunner -> com.vuforia.ar.pl.Camera2_Preview$AutofocusRunner:
+    586:591:void <init>(com.vuforia.ar.pl.Camera2_Preview,com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo) -> <init>
+    636:662:void onCaptureCompleted(android.hardware.camera2.CameraCaptureSession,android.hardware.camera2.CaptureRequest,android.hardware.camera2.TotalCaptureResult) -> onCaptureCompleted
+    596:597:boolean triggerAutofocus() -> triggerAutofocus
+com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo -> com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo:
+    76:76:void <init>(com.vuforia.ar.pl.Camera2_Preview) -> <init>
+com.vuforia.ar.pl.Camera2_Preview$FrameInfo -> com.vuforia.ar.pl.Camera2_Preview$FrameInfo:
+    101:101:void <init>(com.vuforia.ar.pl.Camera2_Preview) -> <init>
+com.vuforia.ar.pl.Camera2_Preview$OnCameraDataAvailable -> com.vuforia.ar.pl.Camera2_Preview$OnCameraDataAvailable:
+    288:295:void <init>(com.vuforia.ar.pl.Camera2_Preview) -> <init>
+    288:288:void <init>(com.vuforia.ar.pl.Camera2_Preview,com.vuforia.ar.pl.Camera2_Preview$1) -> <init>
+    497:549:int[] calculateActualBufferSize(long,long,long,int,int,int,int,int) -> calculateActualBufferSize
+    390:393:int getImageFormat(android.media.Image) -> getImageFormat
+    300:386:void onImageAvailable(android.media.ImageReader) -> onImageAvailable
+com.vuforia.ar.pl.Camera2_Preview$OnFrameCapturedCallback -> com.vuforia.ar.pl.Camera2_Preview$OnFrameCapturedCallback:
+    562:564:void <init>(com.vuforia.ar.pl.Camera2_Preview,com.vuforia.ar.pl.Camera2_Preview$CameraCacheInfo) -> <init>
+    569:571:void onCaptureCompleted(android.hardware.camera2.CameraCaptureSession,android.hardware.camera2.CaptureRequest,android.hardware.camera2.TotalCaptureResult) -> onCaptureCompleted
+com.vuforia.ar.pl.CameraSurface -> com.vuforia.ar.pl.CameraSurface:
+    32:40:void <init>(android.content.Context) -> <init>
+    45:46:void setCamera(android.hardware.Camera) -> setCamera
+    76:76:void surfaceChanged(android.view.SurfaceHolder,int,int,int) -> surfaceChanged
+    55:70:void surfaceCreated(android.view.SurfaceHolder) -> surfaceCreated
+    82:83:void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
+com.vuforia.ar.pl.DebugLog -> com.vuforia.ar.pl.DebugLog:
+    17:17:void <init>() -> <init>
+    44:50:void LOGD(java.lang.String,java.lang.String) -> LOGD
+    24:30:void LOGE(java.lang.String,java.lang.String) -> LOGE
+    54:60:void LOGI(java.lang.String,java.lang.String) -> LOGI
+    34:40:void LOGW(java.lang.String,java.lang.String) -> LOGW
+com.vuforia.ar.pl.DrawOverlayView -> com.vuforia.ar.pl.DrawOverlayView:
+    51:52:void <init>(android.content.Context) -> <init>
+    55:88:void <init>(android.content.Context,byte[],int,int,float[],int[]) -> <init>
+    121:123:void addOverlay(android.app.Activity) -> addOverlay
+    93:118:void onDraw(android.graphics.Canvas) -> onDraw
+    129:136:void removeOverlay(android.app.Activity,android.view.View) -> removeOverlay
+com.vuforia.ar.pl.FileTools -> com.vuforia.ar.pl.FileTools:
+    23:23:void <init>() -> <init>
+    57:135:java.lang.String getAbsolutePath(int,java.lang.String) -> getAbsolutePath
+    152:160:android.content.res.AssetManager get_assetmanager() -> get_assetmanager
+    143:144:boolean mediastorage_isAvailable() -> mediastorage_isAvailable
+com.vuforia.ar.pl.ImageTools -> com.vuforia.ar.pl.ImageTools:
+    27:27:void <init>() -> <init>
+    64:155:byte[] encodeImage(byte[],int,int,int,int,int) -> encodeImage
+com.vuforia.ar.pl.PermissionHandler -> com.vuforia.ar.pl.PermissionHandler:
+    42:43:void <clinit>() -> <clinit>
+    21:21:void <init>() -> <init>
+    21:21:boolean access$000() -> access$000
+    21:21:boolean access$002(boolean) -> access$002
+    21:21:java.lang.String[] access$100() -> access$100
+    21:21:int access$200() -> access$200
+    21:21:int access$202(int) -> access$202
+    103:107:int requestPermissions(android.app.Activity,java.lang.String[]) -> requestPermissions
+com.vuforia.ar.pl.PermissionHandler$PermissionsRequestFragment -> com.vuforia.ar.pl.PermissionHandler$PermissionsRequestFragment:
+    51:51:void <init>() -> <init>
+    74:93:void onRequestPermissionsResult(int,java.lang.String[],int[]) -> onRequestPermissionsResult
+    56:61:void onStart() -> onStart
+    65:69:void removeSelf() -> removeSelf
+com.vuforia.ar.pl.RenderManager -> com.vuforia.ar.pl.RenderManager:
+    41:41:void <clinit>() -> <clinit>
+    111:123:void <init>(com.vuforia.ar.pl.SurfaceManager) -> <init>
+    356:374:android.view.View addOverlay(byte[],int,int,float[],int[]) -> addOverlay
+    190:196:boolean canSetRenderMode() -> canSetRenderMode
+    202:202:int getRenderMode() -> getRenderMode
+    380:403:boolean removeOverlay(android.view.View) -> removeOverlay
+    324:336:boolean requestRender() -> requestRender
+    290:296:boolean setRenderFpsLimits(boolean,int,int) -> setRenderFpsLimits
+    210:281:boolean setRenderMode(int) -> setRenderMode
+    173:177:void shutdownTimer() -> shutdownTimer
+    133:168:void startTimer() -> startTimer
+com.vuforia.ar.pl.RenderManager$1 -> com.vuforia.ar.pl.RenderManager$1:
+    367:367:void <init>(com.vuforia.ar.pl.RenderManager,com.vuforia.ar.pl.DrawOverlayView,android.app.Activity) -> <init>
+    370:371:void run() -> run
+com.vuforia.ar.pl.RenderManager$2 -> com.vuforia.ar.pl.RenderManager$2:
+    395:395:void <init>(com.vuforia.ar.pl.RenderManager,android.app.Activity,android.view.View) -> <init>
+    398:400:void run() -> run
+com.vuforia.ar.pl.RenderManager$FixedFrameRateRunner -> com.vuforia.ar.pl.RenderManager$FixedFrameRateRunner:
+    83:83:void <init>(com.vuforia.ar.pl.RenderManager) -> <init>
+    83:83:void <init>(com.vuforia.ar.pl.RenderManager,com.vuforia.ar.pl.RenderManager$1) -> <init>
+    89:101:void run() -> run
+com.vuforia.ar.pl.RenderManager$RenderRequestWatcher -> com.vuforia.ar.pl.RenderManager$RenderRequestWatcher:
+    59:59:void <init>(com.vuforia.ar.pl.RenderManager) -> <init>
+    59:59:void <init>(com.vuforia.ar.pl.RenderManager,com.vuforia.ar.pl.RenderManager$1) -> <init>
+    65:79:void run() -> run
+com.vuforia.ar.pl.SurfaceManager -> com.vuforia.ar.pl.SurfaceManager:
+    52:60:void <init>() -> <init>
+    25:25:void access$000(com.vuforia.ar.pl.SurfaceManager,com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo) -> access$000
+    235:312:boolean addCameraSurface(com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo) -> addCameraSurface
+    114:121:boolean applyRenderWhenDirty() -> applyRenderWhenDirty
+    224:228:void requestRender() -> requestRender
+    174:201:boolean retrieveGLSurfaceView() -> retrieveGLSurfaceView
+    72:102:android.opengl.GLSurfaceView searchForGLSurfaceView(android.view.View) -> searchForGLSurfaceView
+    213:216:boolean setEnableRenderWhenDirty(boolean) -> setEnableRenderWhenDirty
+    128:159:void setupCameraSurface(com.vuforia.ar.pl.Camera1_Preview$CameraCacheInfo) -> setupCameraSurface
+com.vuforia.ar.pl.SurfaceManager$1 -> com.vuforia.ar.pl.SurfaceManager$1:
+    261:261:void <init>(com.vuforia.ar.pl.SurfaceManager) -> <init>
+    265:296:void run() -> run
+com.vuforia.ar.pl.SystemTools -> com.vuforia.ar.pl.SystemTools:
+    28:28:void <init>() -> <init>
+    75:75:boolean checkMinimumApiLevel(int) -> checkMinimumApiLevel
+    163:203:int getActivityOrientation(android.app.Activity) -> getActivityOrientation
+    253:275:int[] getActivitySize(android.app.Activity) -> getActivitySize
+    129:155:int getDeviceOrientation(android.app.Activity) -> getDeviceOrientation
+    281:311:float[] getDisplayDpi(android.app.Activity) -> getDisplayDpi
+    319:361:int[] getDisplaySize(android.app.Activity) -> getDisplaySize
+    212:243:java.lang.String getNativeLibraryPath(android.app.Activity) -> getNativeLibraryPath
+    105:120:java.lang.reflect.Method retrieveClassMethod(java.lang.Class,java.lang.String,java.lang.Class[]) -> retrieveClassMethod
+    80:100:void sendKillSignal(int) -> sendKillSignal
+com.vuforia.ar.pl.SystemTools$1 -> com.vuforia.ar.pl.SystemTools$1:
+    87:87:void <init>(android.app.Activity,int) -> <init>
+    93:97:void run() -> run
+com.vuforia.engine.BuildConfig -> com.vuforia.engine.BuildConfig:
+    6:6:void <init>() -> <init>
+com.vuforia.engine.R -> com.vuforia.engine.R:
+    10:10:void <init>() -> <init>
+com.vuforia.engine.app.BuildConfig -> com.vuforia.engine.app.BuildConfig:
+    6:6:void <init>() -> <init>
+com.vuforia.engine.app.R -> com.vuforia.engine.app.R:
+    10:10:void <init>() -> <init>
