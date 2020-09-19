@@ -49,7 +49,9 @@ using TMPro;
 
 public class weatherAPIScript : MonoBehaviour{
 
-    public GameObject temperatureTextObject;
+	public string APIKey = "84d195e355ae1f1edaa2ae3273a6937e";
+
+	public GameObject temperatureTextObject;
     public GameObject humidityTextObject;
     public GameObject conditionsTextObject;
     public GameObject windDirTextObject;
@@ -76,7 +78,7 @@ public class weatherAPIScript : MonoBehaviour{
 
 	private int debugCond = 8;
 
-	string url = "http://api.openweathermap.org/data/2.5/weather?lat=41.88&lon=-87.6&APPID=84d195e355ae1f1edaa2ae3273a6937e&units=imperial";
+	string url;
 
     
 
@@ -84,7 +86,8 @@ public class weatherAPIScript : MonoBehaviour{
 
         // wait a couple seconds to start and then refresh every 900 seconds
         InvokeRepeating("GetDataFromWeb", 2f, 900f);
-    }
+		url = ("http://api.openweathermap.org/data/2.5/weather?lat=41.88&lon=-87.6&APPID=" + APIKey + "&units=imperial");
+	}
 
     void GetDataFromWeb() {
 
